@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class SignInPage {
 	WebDriver driver;
@@ -25,6 +26,10 @@ public class SignInPage {
 	public String profileName()
 	{
 		return driver.findElement(By.cssSelector("a[title='View my customer account']")).getText();
+	}
+	public WebElement profileNameElement()
+	{
+		return driver.findElement(By.cssSelector("a[title='View my customer account']"));
 	}
 	public String errorMessage()
 	{

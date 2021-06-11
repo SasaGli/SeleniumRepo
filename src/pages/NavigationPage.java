@@ -17,5 +17,13 @@ public class NavigationPage {
 	{
 		driver.findElement(By.linkText("Sign in")).click();
 	}
+	public void goToMyAccountPage()
+	{
+		driver.findElement(By.cssSelector("a[title='View my customer account']")).click();
+	}
+	public void goToMyAddressPage()
+	{
+		driver.findElement(By.cssSelector("a[title='View my customer account']")).click();
+	}
 
 }
