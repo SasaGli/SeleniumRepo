@@ -45,9 +45,17 @@ public class MyAdressesPage {
 	{
 		driver.findElement(By.id("firstname")).sendKeys(firstname);
 	}
+	public void firstnameClear()
+	{
+		driver.findElement(By.id("firstname")).clear();;
+	}
 	public void lastname(String lastname)
 	{
 		driver.findElement(By.id("lastname")).sendKeys(lastname);
+	}
+	public void lastnameClear()
+	{
+		driver.findElement(By.id("lastname")).clear();
 	}
 	public void city(String city)
 	{

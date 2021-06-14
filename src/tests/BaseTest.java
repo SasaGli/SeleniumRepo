@@ -12,7 +12,9 @@ import org.testng.annotations.BeforeClass;
 import pages.MyAccountPage;
 import pages.MyAdressesPage;
 import pages.NavigationPage;
+import pages.PersonalInfoPage;
 import pages.SignInPage;
+import pages.WishlistPage;
 
 public class BaseTest {
 	
@@ -23,6 +25,8 @@ public class BaseTest {
 	WebDriverWait wait;
 	MyAccountPage myAccountPage;
 	MyAdressesPage myAddress;
+	PersonalInfoPage personalInfo;
+	WishlistPage wishlist;
 	
 	@BeforeClass
 	public void BeforeEveryTests() throws IOException {
@@ -37,6 +41,8 @@ public class BaseTest {
 		wait=new WebDriverWait(driver, 2);
 		myAccountPage=new MyAccountPage(driver);
 		myAddress=new MyAdressesPage(driver);
+		personalInfo=new PersonalInfoPage(driver);
+		wishlist=new WishlistPage(driver);
 	
 	}
 	@AfterClass

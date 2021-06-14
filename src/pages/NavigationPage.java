@@ -25,5 +25,9 @@ public class NavigationPage {
 	{
 		driver.findElement(By.cssSelector("a[title='View my customer account']")).click();
 	}
+	public void goToPersonalInfoPage()
+	{
+		driver.findElement(By.cssSelector("a[title='Information']")).click();
+	}
 
 }

@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AddresTest">
+      <class name="tests.WishlistTest">
         <methods>
           <include name="posleSvakogTesta"/>
           <include name="beforeTests"/>
-          <include name="deleteAddress"/>
           <include name="posleSihTestova"/>
           <include name="BeforeEveryTests"/>
+          <include name="addWishlst"/>
         </methods>
-      </class> <!-- tests.AddresTest -->
+      </class> <!-- tests.WishlistTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
