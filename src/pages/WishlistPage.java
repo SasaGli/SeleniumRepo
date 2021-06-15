@@ -43,13 +43,17 @@ public class WishlistPage {
 	for(String i:listOfWishlists())
 	{
 		if(i.trim().contains(item))
-			System.out.println(i);
+			
 				 lookfor=true;
 		
 	}
 	
 		return lookfor;
 		
+	}
+	public void removeItem()
+	{
+		driver.findElement(By.className("icon-remove")).click();
 	}
 	
 }

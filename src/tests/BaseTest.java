@@ -36,7 +36,7 @@ public class BaseTest {
 		navigator=new NavigationPage(driver);
 		signIn=new SignInPage(driver);
 		excelReader=new ExcelReader("data/Test plan.xlsx");
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		wait=new WebDriverWait(driver, 2);
 		myAccountPage=new MyAccountPage(driver);
